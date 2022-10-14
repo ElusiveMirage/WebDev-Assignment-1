@@ -12,8 +12,8 @@ function myFunction() {
 function myMap() {
   const singapore = { lat: 1.364106, lng: 103.930816 };
   const map = new google.maps.Map(document.getElementById("googleMap"), {
-    center: singapore,
-    zoom: 15
+    zoom: 15,
+    center: singapore
   });
   const marker = new google.maps.Marker({position: singapore, map: map,});
 }
