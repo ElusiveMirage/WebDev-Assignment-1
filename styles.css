@@ -94,6 +94,14 @@ p2 {
     font-size:150%;
 }
 
+#googleMap {
+  height: 400px;
+  width: 320px;
+  padding: 10px;
+  margin: auto;
+}
+
+
 .topnav {
   background-color: #333;
   overflow: hidden;
