@@ -10,6 +10,7 @@ function myFunction() {
 }
 
 function myMap() {
+  const singapore = { lat: 1.364106, lng: 103.930816 };
   var mapProp= {
     center: singapore,
     zoom:5,
