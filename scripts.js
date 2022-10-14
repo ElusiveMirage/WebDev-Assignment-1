@@ -15,7 +15,5 @@ function myMap() {
     zoom:5,
   };
   var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
-  const marker = new google.maps.Marker({position: singapore});
-
-marker.setMap(map);
-  }
+  const marker = new google.maps.Marker({position: singapore, map: map,});
+}
