@@ -52,6 +52,15 @@ div
   margin: auto;
 }
 
+#aboutbox {
+  width: 520px;
+  padding: 10px;
+  background-color: purple;
+  border: 5px transparent blue;
+  height: 200px;
+  margin: auto;
+}
+
 table, th, td {
   border: 1px solid;
   margin: auto;
