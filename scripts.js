@@ -11,7 +11,7 @@ function topNav() {
 
 function toggleLoginForm()
 {
-  var x = document.getElementByID("login-container");
+  var x = document.getElementById("login-container");
 
   if (x.style.display === "none") {
     x.style.display = "block";

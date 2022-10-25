@@ -35,8 +35,6 @@ div
   width: 80%;
   max-width: 600px;
   border-radius: 20px;
-  margin-left: auto;
-  margin-right: auto;
   position: absolute;
   z-index: 2;
 }
@@ -102,7 +100,7 @@ div
   cursor: pointer;
 }
 
-.login-button:hover, .login-button:focus {
+.login-submit:hover, .login-submit:focus {
   background-color: rgba(38, 126, 226, 0.4);
 }
 
