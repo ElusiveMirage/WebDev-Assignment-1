@@ -29,7 +29,6 @@ div
 }
 
 .login-container {
-  display: none;
   background-color:rgba(82, 94, 167, 0.4);
   box-shadow: 0 0 15px 0 rgba(82, 94, 167, 0.4);
   padding: 40px 30px;
