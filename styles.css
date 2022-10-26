@@ -36,7 +36,6 @@ div
   max-width: 600px;
   border-radius: 20px;
   margin: auto;
-  position: absolute;
   font-family: "montserrat", sans-serif;
   z-index: 2;
 }
@@ -88,7 +87,7 @@ div
   border: 1px solid rgba(38, 151, 226, 0.25);
   border-radius: .25em;
   width: 40%;
-  max-width: 400px;
+  max-width: 200px;
   outline: none;
   cursor: pointer;
 }
