@@ -26,20 +26,26 @@ div
   border-radius: .25em;
   outline: none;
   cursor: pointer;
+  font-family: "montserrat", sans-serif;
 }
 
 .login-container {
-  background-color:rgba(82, 94, 167, 0.4);
+  background-color:rgba(77, 88, 156, 0.85);
   box-shadow: 0 0 15px 0 rgba(82, 94, 167, 0.4);
   padding: 40px 30px;
   width: 80%;
+  height: 40%;
   max-width: 600px;
+  max-height: 400px;
   border-radius: 20px;
-  display: flex;
   justify-content: center;
-  font-family: "montserrat", sans-serif;
   position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   z-index: 2;
+  font-family: "montserrat", sans-serif;
 }
 
 .login-title {
@@ -69,7 +75,7 @@ div
 .input-group input {
   font-size: 1.25rem;
   padding: .5em;
-  background-color: rgba(82, 93, 131, 0.4);
+  background-color: rgba(77, 77, 77, 0.753);
   border: none;
   outline: none;
   border-radius: .25em;
@@ -86,7 +92,7 @@ div
   font-size: 1.5rem;
   font-weight: lighter;
   color: white;
-  background-color: rgba(38, 126, 226, 0.25);
+  background-color: rgba(23, 123, 238, 0.596);
   border: 1px solid rgba(38, 151, 226, 0.25);
   border-radius: .25em;
   width: 40%;
@@ -98,13 +104,7 @@ div
 }
 
 .login-submit:hover, .login-submit:focus {
-  background-color: rgba(38, 126, 226, 0.4);
-}
-
-/* The animation code */
-@keyframes example {
-  from {background-color: yellow; transform: rotate(0deg);}
-  to {background-color: red; transform: rotate(360deg);}
+  background-color: rgba(10, 161, 221, 0.747);
 }
 
 #textbox {
@@ -113,35 +113,8 @@ div
   background-color: yellow;
   border: 5px solid green;
   height: 200px;
+  position: static;
   margin: auto;
-}
-
-#aboutbox {
-  width: 520px;
-  padding: 10px;
-  background-color: purple;
-  border: 5px transparent blue;
-  height: 200px;
-  margin: auto;
-}
-
-table, th, td {
-  border: 1px solid;
-  margin: auto;
-}
-
-#listbox {
-  width: 320px;
-  padding: 10px;
-  background-color: pink;
-  border: 5px solid purple;
-  margin: auto;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  }
-
-ul.list1 {
-  list-style-type: circle;
 }
 
 p1 {
@@ -151,13 +124,17 @@ p1 {
     font-size:250%;
 }
 
-p2 {
-  color:white;
-  font-family:courier;
-    text-align:center;
-    font-size:150%;
+/* About page css */
+#aboutbox {
+  width: 520px;
+  padding: 10px;
+  background-color: purple;
+  border: 5px transparent blue;
+  height: 200px;
+  margin: auto;
 }
 
+/* Contact page css */
 #googleMap {
   height: 400px;
   width: 800px;
@@ -169,6 +146,7 @@ p2 {
   overflow: hidden;
 }
 
+/* Topnav bar stuff */
 /* Style the links inside the navigation bar */
 .topnav a {
   float: left;
