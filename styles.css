@@ -38,6 +38,7 @@ div
   display: flex;
   justify-content: center;
   font-family: "montserrat", sans-serif;
+  position: relative;
   z-index: 2;
 }
 
@@ -90,6 +91,7 @@ div
   border-radius: .25em;
   width: 40%;
   max-width: 200px;
+  margin: auto;
   outline: none;
   cursor: pointer;
 }
