@@ -55,6 +55,7 @@ div
   flex-direction: column;
   color: white;
   gap: 20px;
+  margin: auto;
   margin-top: 40px;
 }
 
@@ -77,11 +78,6 @@ div
 
 .input-group input:focus {
   box-shadow: 0 0 0 1px rgba(49, 216, 228, 0.952);
-}
-
-.input-group.input-msg-email {
-  display: none;
-  color: red;
 }
 
 .login-submit {
