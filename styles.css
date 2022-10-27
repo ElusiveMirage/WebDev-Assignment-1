@@ -61,6 +61,14 @@ div
   font-weight: normal;
 }
 
+.login-signup-link {
+  text-align: center;
+  margin: auto;
+  color: white;
+  font-size: 1rem;
+  font-weight: lighter;
+}
+
 .login-form {
   display: flex;
   flex-direction: column;
@@ -86,13 +94,14 @@ div
   border-radius: .25em;
   color: white;
   font-weight: lighter;
+  position: relative;
 }
 
 .input-group input:focus {
   box-shadow: 0 0 0 1px rgba(49, 216, 228, 0.952);
 }
 
-.login-submit {
+.submit-button {
   padding: .5em 1em;
   font-size: 1.5rem;
   font-weight: lighter;
@@ -108,7 +117,7 @@ div
   cursor: pointer;
 }
 
-.login-submit:hover, .login-submit:focus {
+.submit-button:hover, .submit-button:focus {
   background-color: rgba(10, 161, 221, 0.747);
 }
 
@@ -171,7 +180,7 @@ p1 {
 
 /* Add an active class to highlight the current page */
 .topnav a.active {
-  background-color: #04AA6D;
+  background-color: rgba(23, 123, 238, 0.596);
   color: white;
 }
 

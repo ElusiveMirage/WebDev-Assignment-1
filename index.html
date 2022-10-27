@@ -25,15 +25,22 @@
         <link rel="stylesheet" href="styles.css">
         <!-- Load external JavaScript -->
         <script src="scripts.js"></script>
+        <script src="jquery-3.6.1.js"></script>
 
     </head>
 
-    <body style="background-color:powderblue;">
+    <body style="background-color:rgb(255, 255, 255);">
 
-        <h1>car rental thingy</h1>
+        <h1>Rent your next car, anytime, anywhere</h1>
 
         <div class="login-container" style="display: none;" id = "login-container">
-          <h2 class="login-title">Welcome</h2>
+
+          <div><h2 class="login-title">Welcome</h2>
+            <p class="login-signup-link">Not a member?</p>
+            <button id="signup-button" class="signup-button" onclick="toggleSignupForm()">Sign Up</button>
+          </div>
+            
+          
           <form class="login-form">
             <div class ="input-group">
               <label for="email">Email</label>
@@ -42,10 +49,43 @@
 
             <div class ="input-group">
               <label for="password">Password</label>
-              <input type="password" name="password" id="password">
+              <input type="password" name="password" id="password"> 
             </div>
 
-            <button type="submit" class="login-submit">Login</button>
+            <div>
+              <input type="checkbox" onclick="showPassword()">Show password
+            </div>
+
+            <button type="submit" class="submit-button">Login</button>
+
+          </form>
+        </div>
+
+        <div class="signup-container" style="display: none;" id = "signup-container">
+          
+          <div><h3 class="signup-title">Create a new account</h3>
+          <hr>
+          <form class="signup-form">
+            <div class ="input-group">
+              <label for="email">Email</label>
+              <input type="email" name="email" id="email">
+            </div>
+
+            <div class ="input-group">
+              <label for="password">Password</label>
+              <input type="password" name="password" id="password"> 
+            </div>
+            
+            <div class ="input-group">
+              <label for="password">Confirm Password</label>
+              <input type="password" name="password" id="password"> 
+            </div>
+
+            <div>
+              <input type="checkbox" onclick="showPassword()">Show password
+            </div>
+
+            <button type="submit" class="submit-button">Sign Up</button>
 
           </form>
         </div>
