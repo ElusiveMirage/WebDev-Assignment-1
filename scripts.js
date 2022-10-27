@@ -42,10 +42,10 @@ function showPassword() {
 
 function myMap() {
   const singapore_loc_1 = { lat: 1.364106, lng: 103.930816 };
-  const singapore_loc_2 = { lat: 1.564106, lng: 105.930816 };
+  const singapore_loc_2 = { lat: 1.384106, lng: 103.920816 };
   const map = new google.maps.Map(document.getElementById("googleMap"), {
     zoom: 10,
-    center: singapore
+    center: singapore_loc_1
   });
   const marker1 = new google.maps.Marker({position: singapore_loc_1, map: map,});
   const marker2 = new google.maps.Marker({position: singapore_loc_2, map: map,});
