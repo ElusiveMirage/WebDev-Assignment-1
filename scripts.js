@@ -1,5 +1,6 @@
 /* Place your JavaScript in this file */
-/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+let userLogin = false;
+
 function topNav() {
   var x = document.getElementById("myTopnav");
   if (x.className === "topnav") {
@@ -17,6 +18,25 @@ function toggleLoginForm()
     x.style.display = "flex";
   } else {
     x.style.display = "none";
+  }
+}
+
+function loginSubmit()
+{
+  userLogin = true;
+}
+
+function checkUserLogin()
+{
+  if(userLogin)
+  {
+    document.getElementById("topnav-login-button").style.display = "none";
+    document.getElementById("profile-button").style.display = "";
+  }
+  else
+  {
+    document.getElementById("topnav-login-button").style.display = "";
+    document.getElementById("profile-button").style.display = "none";
   }
 }
 

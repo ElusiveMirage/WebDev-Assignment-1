@@ -12,7 +12,8 @@
           <i class="fa fa-bars"></i>
       </a>
       
-      <button id="login-button" class="login-button" onclick="toggleLoginForm()">Login</button>
+      <button id="topnav-login-button" class="login-button" onclick="toggleLoginForm()">Login</button>
+      <button style="display: none;" id="profile-button" class="profile-button" onclick="toggleLoginForm()">Profile</button>
     </div>  
 
     <head>
@@ -25,7 +26,7 @@
         <!-- Load external JavaScript -->
         <script src="scripts.js"></script>
         <script src="jquery-3.6.1.js"></script>
-
+        <script>window.onload = checkUserLogin;</script> 
     </head>
 
     <body style="background-color:rgb(255, 255, 255);">
@@ -55,7 +56,7 @@
               <input type="checkbox" onclick="showPassword()">Show password
             </div>
 
-            <button type="submit" class="submit-button">Login</button>
+            <button type="submit" class="submit-button" onclick="loginSubmit()">Login</button>
 
           </form>
         </div>

@@ -19,6 +19,25 @@
   font-family: "montserrat", sans-serif;
 }
 
+.profile-button {
+  width: 100px;
+  height: 50px;
+  font-size: 1.5rem;
+  font-weight: lighter;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  background-color: rgba(38, 126, 226, 0.25);
+  border: 1px solid rgba(38, 151, 226, 0.25);
+  border-radius: .25em;
+  display: block;
+  position: relative;
+  margin-left: auto;
+  margin-right: 5px;
+  outline: none;
+  cursor: pointer;
+  font-family: "montserrat", sans-serif;
+}
+
 .signup-button {
   width: 100px;
   height: 35px;
