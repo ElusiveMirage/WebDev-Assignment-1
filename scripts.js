@@ -28,7 +28,7 @@ function loginSubmit()
 
 function checkUserLogin()
 {
-  if(userLogin)
+  if(userLogin === true)
   {
     document.getElementById("topnav-login-button").style.display = "none";
     document.getElementById("profile-button").style.display = "";
@@ -43,6 +43,12 @@ function checkUserLogin()
 function toggleSignupForm()
 {
   var x = document.getElementById("signup-container");
+  var y = document.getElementById("login-container");
+
+  if(y.style.display === "flex")
+  {
+    y.style.display = "none";
+  }
 
   if (x.style.display === "none") {
     x.style.display = "flex";
