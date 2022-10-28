@@ -1,5 +1,9 @@
 /* Place your JavaScript in this file */
-let userLogin = false;
+sessionStorage.setItem("userLogin", "false")
+
+window.addEventListener ? 
+window.addEventListener("load",checkUserLogin,false) : 
+window.attachEvent && window.attachEvent("onload", checkUserLogin);
 
 function topNav() {
   var x = document.getElementById("myTopnav");
@@ -23,12 +27,14 @@ function toggleLoginForm()
 
 function loginSubmit()
 {
-  userLogin = true;
+  sessionStorage.setItem("userLogin", "true")
+  checkUserLogin();
 }
 
 function checkUserLogin()
 {
-  if(userLogin === true)
+  let x = sessionStorage.getItem("userLogin");
+  if(x === "true")
   {
     document.getElementById("topnav-login-button").style.display = "none";
     document.getElementById("profile-button").style.display = "";

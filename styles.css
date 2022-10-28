@@ -178,16 +178,6 @@ padding-top: 5px;
 padding-bottom: 4px;
 }
 
-#textbox {
-  width: 520px;
-  padding: 10px;
-  background-color: yellow;
-  border: 5px solid green;
-  height: 200px;
-  position: static;
-  margin: auto;
-}
-
 p1 {
     color:red;
     font-family:courier;
@@ -196,14 +186,6 @@ p1 {
 }
 
 /* About page css */
-#aboutbox {
-  width: 520px;
-  padding: 10px;
-  background-color: purple;
-  border: 5px transparent blue;
-  height: 200px;
-  margin: auto;
-}
 
 /* Contact page css */
 #googleMap {

@@ -1,23 +1,34 @@
 <!doctype html>
 
 <html>
+    <div class="topnav" id="myTopnav">
+        <a href="./index.html" class="active">Home</a>
+        <a href="./catalog.html">Catalog</a>
+        <a href="./contact.html">Contact Us</a>
+        <a href="./about.html">About</a>
+        <a href="javascript:void(0);" class="icon" onclick="topNav()">
+            <i class="fa fa-bars"></i>
+        </a>
+        
+        <button id="topnav-login-button" class="login-button" onclick="toggleLoginForm()">Login</button>
+        <button style="display: none;" id="profile-button" class="profile-button" onclick="toggleLoginForm()">Profile</button>
+      </div>  
+
     <head>
         <meta charset="utf-8">
 
         <title>Car Rental</title>
-
+        <link rel="icon" type="image/png" sizes="32x32" href="images/car_favicon.png">
         <!-- Load external CSS styles -->
         <link rel="stylesheet" href="styles.css">
-
+        <!-- Load external JavaScript -->
+        <script src="scripts.js"></script>
+        <script src="jquery-3.6.1.js"></script>
     </head>
 
-    <body style="background-color:rgb(131, 184, 166);">
+    <body style="background-color:rgb(255, 255, 255);">
 
-        <h1>About</h1>
-
-        <div id = "aboutbox">
-          <p1>We're all bout renting cars yo</p1>
-        </div>
+        <h1>About Us</h1>
         
         <!-- Load external JavaScript -->
         <script src="scripts.js"></script>
