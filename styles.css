@@ -212,6 +212,15 @@ p1 {
   font-family: "montserrat", sans-serif;
 }
 
+/* Profile page css */
+#profile_info {
+  position: relative;
+  width: 30%;
+  color: black;
+  font-family: "montserrat", sans-serif;
+  text-align: center;
+}
+
 /* Topnav bar stuff */
 /* Style the links inside the navigation bar */
 .topnav a {
