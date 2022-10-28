@@ -231,6 +231,13 @@ padding-bottom: 4px;
   text-align: center;
 }
 
+.footer-links {
+  position: relative;
+  bottom: 0;
+  margin-top: -25px;
+  font-family: "montserrat", sans-serif;
+}
+
 .copyright-text {
   position: relative;
   bottom: 0;
@@ -253,6 +260,21 @@ p1 {
 #contact-page-info {
   display: block;
   margin: auto;
+  color: black;
+  font-family: "montserrat", sans-serif;
+  text-align: center;
+}
+
+#contact-flex-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#contact-flex-container > div {
+  width: 300px;
+  margin: 10px;
   color: black;
   font-family: "montserrat", sans-serif;
   text-align: center;
