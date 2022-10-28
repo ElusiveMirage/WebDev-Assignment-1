@@ -170,6 +170,47 @@ h1 {
   font-weight: normal;
 }
 
+#landing-page-header {
+  display: block;
+  position: relative;
+  text-align: center;
+  padding-top: 25px;
+  font-size: 32px;
+  font-family: "montserrat", sans-serif;
+  font-weight: normal;
+  font-style: italic;
+}
+
+#landing-page-logo {
+  display: block;
+  position: relative;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: -1;
+}
+
+#landing-page-banner {
+  display: block;
+  position: relative;
+  width: 50%;
+  height: 350px;
+  margin-top: -75px;
+  margin-left: auto;
+  margin-right: 20px;
+}
+
+#landing-page-banner-bg {
+  display: block;
+  position: relative;
+  padding-top: 100px;
+  background-color: #333;
+  width: 100%;
+  height: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 div
 {
 text-align: center;
@@ -190,6 +231,15 @@ padding-bottom: 4px;
   text-align: center;
 }
 
+.copyright-text {
+  position: relative;
+  bottom: 0;
+  margin-top: 50px;
+  background-color: #333;
+  color: white;
+  font-family: "montserrat", sans-serif;
+}
+
 p1 {
     color:red;
     font-family:courier;
@@ -200,7 +250,15 @@ p1 {
 /* About page css */
 
 /* Contact page css */
-#googleMap {
+#contact-page-info {
+  display: block;
+  margin: auto;
+  color: black;
+  font-family: "montserrat", sans-serif;
+  text-align: center;
+}
+
+#contact-googleMap {
   height: 400px;
   width: 800px;
   margin: auto;

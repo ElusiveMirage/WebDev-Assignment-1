@@ -72,10 +72,10 @@ function showPassword() {
   }
 }
 
-function myMap() {
+function contactMap() {
   const singapore_loc_1 = { lat: 1.364106, lng: 103.930816 };
   const singapore_loc_2 = { lat: 1.384106, lng: 103.920816 };
-  const map = new google.maps.Map(document.getElementById("googleMap"), {
+  const map = new google.maps.Map(document.getElementById("contact-googleMap"), {
     zoom: 10,
     center: singapore_loc_1
   });

@@ -1,0 +1,103 @@
+<!doctype html>
+
+<html>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <div class="topnav" id="myTopnav">
+      <a href="./index.html">Home</a>
+      <a href="./catalog.html" class="active">Catalog </a>
+      <a href="./contact.html">Contact Us</a>
+      <a href="./about.html">About</a>
+      <a href="javascript:void(0);" class="icon" onclick="topNav()">
+          <i class="fa fa-bars"></i>
+      </a>
+      
+      <button id="topnav-login-button" class="login-button" onclick="toggleLoginForm()">Login</button>
+      <button style="display: none;" id="profile-button" class="profile-button" onclick="location.href='./profile_page.html';">Profile</button>
+    </div>  
+
+    <head>
+        <meta charset="utf-8">
+
+        <title>AZoom Car Rental</title>
+        <link rel="icon" type="image/png" sizes="32x32" href="images/car_favicon.png">
+        <!-- Load external CSS styles -->
+        <link rel="stylesheet" href="styles.css">
+        <!-- Load external JavaScript -->
+        <script src="scripts.js"></script>
+        <script src="jquery-3.6.1.js"></script>
+
+    </head>
+
+    <body style="background-color:rgb(255, 255, 255);" onload="checkUserLogin()">
+
+        <h1>Rent your next car, anytime, anywhere</h1>
+        
+                      
+        <div class="footer">
+          <p>Footer</p>
+        </div>
+
+        <div class="login-container" style="display: none;" id = "login-container">
+
+          <div><h2 class="login-title">Welcome</h2>
+            <p class="login-signup-link">Not a member?</p>
+            <button id="signup-button" class="signup-button" onclick="toggleSignupForm()">Sign Up</button>
+          </div>
+            
+          
+          <form class="login-form">
+            <div class ="input-group">
+              <label for="email">Email</label>
+              <input type="email" name="email" id="email">
+            </div>
+
+            <div class ="input-group">
+              <label for="password">Password</label>
+              <input type="password" name="password" id="password"> 
+            </div>
+
+            <div>
+              <input type="checkbox" onclick="showPassword()">Show password
+            </div>
+
+            <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+            <button type="submit" class="submit-button" onclick="loginSubmit()">Login</button>
+
+          </form>
+        </div>
+
+        <div class="signup-container" style="display: none;" id = "signup-container">
+          
+          <div><h3 class="signup-title">Create a new account</h3>
+          <hr>
+          <form class="signup-form">
+            <div class ="input-group">
+              <label for="email">Email</label>
+              <input type="email" name="email" id="email">
+            </div>
+
+            <div class ="input-group">
+              <label for="password">Password</label>
+              <input type="password" name="password" id="password"> 
+            </div>
+            
+            <div class ="input-group">
+              <label for="password">Confirm Password</label>
+              <input type="password" name="password" id="password"> 
+            </div>
+
+            <div>
+              <input type="checkbox" onclick="showPassword()">Show password
+            </div>
+
+            <button type="submit" class="submit-button">Sign Up</button>
+
+          </form>
+        </div>
+
+    </body>
+</div>
+
+</html>
