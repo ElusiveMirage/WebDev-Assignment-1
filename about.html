@@ -11,7 +11,7 @@
         </a>
         
         <button id="topnav-login-button" class="login-button" onclick="toggleLoginForm()">Login</button>
-        <button style="display: none;" id="profile-button" class="profile-button" onclick="toggleLoginForm()">Profile</button>
+        <button style="display: none;" id="profile-button" class="profile-button" onclick="location.href='./profile_page.html';">Profile</button>
       </div>  
 
     <head>
@@ -26,12 +26,9 @@
         <script src="jquery-3.6.1.js"></script>
     </head>
 
-    <body style="background-color:rgb(255, 255, 255);">
+    <body style="background-color:rgb(255, 255, 255);" onload="checkUserLogin()">
 
         <h1>About Us</h1>
-        
-        <!-- Load external JavaScript -->
-        <script src="scripts.js"></script>
         
     </body>
 </div>
