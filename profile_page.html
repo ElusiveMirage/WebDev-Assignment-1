@@ -24,7 +24,7 @@
         <!-- Load external JavaScript -->
         <script src="scripts.js"></script>
         <script src="jquery-3.6.1.js"></script>
-
+        <script src="https://kit.fontawesome.com/1da6a09d98.js" crossorigin="anonymous"></script>
     </head>
 
     <body style="background-color:rgb(255, 255, 255);" onload="checkUserLogin()">
@@ -35,10 +35,12 @@
         <img src="images/profile_icon.png" alt="test" style="display: block; margin-left: auto; margin-right: auto; width: 10%; height: 10%;">
 
         <div id="profile_info">
-            <p>Name : John Tan </p> 
-            <p>Tel : 96964207</p>
-            <p>Email : johntan@mymail.com</p>
-            <p>License : Class 3A</p>
+            <p>Personal Details</p>
+            <i class="fa-solid fa-user" style="float: left; position: relative;"></i><p>Name : John Tan </p> 
+            <i class="fa-solid fa-phone" style="float: left; position: relative;"></i> <p>Tel : 96964207</p>
+            <i class="fa-solid fa-envelope" style="float: left; position: relative;"></i> <p>Email : johntan@mymail.com</p>
+            <i class="fa-solid fa-id-card" style="float: left; position: relative;"></i> <p>License : Class 3A</p>
+            
             <button id="profile-edit-button" class="profile-edit-button">Edit Info</button>
             <button id="profile-edit-button" class="profile-edit-button">Change Password</button>
         </div>

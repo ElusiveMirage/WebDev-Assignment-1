@@ -214,11 +214,13 @@ p1 {
 
 /* Profile page css */
 #profile_info {
-  position: relative;
+  display: block;
   width: 30%;
+  margin: auto;
+  margin-left: 46%;
   color: black;
   font-family: "montserrat", sans-serif;
-  text-align: center;
+  text-align: justify;
 }
 
 /* Topnav bar stuff */
