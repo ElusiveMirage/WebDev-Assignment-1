@@ -76,22 +76,33 @@ function contactMap() {
   const singapore_loc_1 = { lat: 1.364106, lng: 103.930816 };
   const singapore_loc_2 = { lat: 1.384106, lng: 103.920816 };
   const map = new google.maps.Map(document.getElementById("contact-googleMap"), {
-    zoom: 10,
+    zoom: 13,
     center: singapore_loc_1
   });
   const marker1 = new google.maps.Marker({position: singapore_loc_1, map: map,});
+  google.maps.event.addListener(marker1,'click',function() {   
+    selectMarker(marker1, map);
+  });
   const marker2 = new google.maps.Marker({position: singapore_loc_2, map: map,});
+  google.maps.event.addListener(marker2,'click',function() {   
+    selectMarker(marker2, map);
+  });
 }
 
 function reservationMap() {
   const singapore_loc_1 = { lat: 1.364106, lng: 103.930816 };
   const singapore_loc_2 = { lat: 1.384106, lng: 103.920816 };
   const map = new google.maps.Map(document.getElementById("reservation-googleMap"), {
-    zoom: 10,
+    zoom: 13,
     center: singapore_loc_1
   });
   const marker1 = new google.maps.Marker({position: singapore_loc_1, map: map,});
   const marker2 = new google.maps.Marker({position: singapore_loc_2, map: map,});
+}
+
+function selectMarker(marker, map) {
+  map.setZoom(16);
+  map.setCenter(marker.getPosition());
 }
 
 let slideIndex = 1;
