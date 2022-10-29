@@ -72,6 +72,34 @@ function showPassword() {
   }
 }
 
+function validatePayment() {
+  var name = document.forms["paymentForm"]["cardname"].value;
+  if (name == "") {
+    alert("Name must be filled out");
+    return false;
+  }
+  var number = document.forms["paymentForm"]["cardnumber"].value;
+  if (number == "") {
+    alert("Credit card number must be filled out");
+    return false;
+  }
+  var month = document.forms["paymentForm"]["expmonth"].value;
+  if (month == "") {
+    alert("Date must be filled out");
+    return false;
+  }
+  var year = document.forms["paymentForm"]["expyear"].value;
+  if (year == "") {
+    alert("Date must be filled out");
+    return false;
+  }
+  var cvv = document.forms["paymentForm"]["cvv"].value;
+  if (cvv == "") {
+    alert("CVV must be filled out");
+    return false;
+  }
+}
+
 function contactMap() {
   const singapore_loc_1 = { lat: 1.364106, lng: 103.930816 };
   const singapore_loc_2 = { lat: 1.384106, lng: 103.920816 };
@@ -105,7 +133,7 @@ function locationSelect()
   var selection = document.getElementById("location-selection").value;
   const singapore_loc_1 = { lat: 1.364106, lng: 103.930816 };
   const singapore_loc_2 = { lat: 1.384106, lng: 103.920816 };
-  
+
   const map = new google.maps.Map(document.getElementById("reservation-googleMap"), {
     zoom: 13,
     center: singapore_loc_1
