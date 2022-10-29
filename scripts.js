@@ -72,6 +72,32 @@ function showPassword() {
   }
 }
 
+function validateLogin() {
+  var email = document.forms["loginForm"]["email"].value;
+
+  var password = document.forms["loginForm"]["password"].value;
+
+  if (email == "") {
+    alert("Email cannot be empty");
+    return false;
+  }
+
+  if (password == "") {
+    alert("Password cannot be empty");
+    return false;
+  }
+
+  if (email != "johntan@mymail.com") {
+    alert("Incorrect email");
+    return false;
+  }
+
+  if (password != "Password@1234") {
+    alert("Incorrect password");
+    return false;
+  }
+}
+
 function validatePayment() {
   var name = document.forms["paymentForm"]["cardname"].value;
   if (name == "") {

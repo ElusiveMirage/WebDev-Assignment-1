@@ -50,6 +50,65 @@
               <p>Copyright © 2022 AZoom Car Rental Pte. Ltd.</p>
             </div>
           </div>
+        
+          <div class="login-container" style="display: none;" id = "login-container">
+
+            <div><h2 class="login-title">Welcome</h2>
+              <p class="login-signup-link">Not a member?</p>
+              <button id="signup-button" class="signup-button" onclick="toggleSignupForm()">Sign Up</button>
+            </div>
+              
+            
+            <form class="login-form" name="loginForm" onsubmit="return validateLogin()">
+              <div class ="input-group">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email">
+              </div>
+  
+              <div class ="input-group">
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"> 
+              </div>
+  
+              <div>
+                <input type="checkbox" onclick="showPassword()">Show password
+              </div>
+  
+              <button type="submit" class="submit-button" onclick="loginSubmit()">Login</button>
+  
+            </form>
+          </div>
+  
+          <div class="signup-container" style="display: none;" id = "signup-container">
+            
+            <div><h3 class="signup-title">Create a new account</h3>
+            <hr>
+            <form class="signup-form">
+              <div class ="input-group">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email">
+              </div>
+  
+              <div class ="input-group">
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"> 
+              </div>
+              
+              <div class ="input-group">
+                <label for="password">Confirm Password</label>
+                <input type="password" name="password" id="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"> 
+              </div>
+  
+              <div>
+                <input type="checkbox" onclick="showPassword()">Show password
+              </div>
+              
+              <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+  
+              <button type="submit" class="submit-button" id="signup-submit">Sign Up</button>
+  
+            </form>
+          </div>  
 
     </body>
 </div>
