@@ -233,18 +233,62 @@ padding-bottom: 4px;
 
 .footer-links {
   position: relative;
-  bottom: 0;
-  margin-top: -25px;
+  bottom: -5px;
+  margin-top: -20px;
   font-family: "montserrat", sans-serif;
+}
+
+.social-media-links {
+  position: relative;
+}
+
+.fa {
+  padding: 10px;
+  font-size: 15px;
+  width: 15px;
+  height: 15px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
 }
 
 .copyright-text {
   position: relative;
   bottom: 0;
-  margin-top: 50px;
+  margin-top: 10px;
   background-color: #333;
   color: white;
   font-family: "montserrat", sans-serif;
+  font-size: smaller;
 }
 
 p1 {
