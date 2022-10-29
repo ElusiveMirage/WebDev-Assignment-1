@@ -100,6 +100,29 @@ function reservationMap() {
   const marker2 = new google.maps.Marker({position: singapore_loc_2, map: map,});
 }
 
+function locationSelect()
+{
+  var selection = document.getElementById("location-selection").value;
+  const singapore_loc_1 = { lat: 1.364106, lng: 103.930816 };
+  const singapore_loc_2 = { lat: 1.384106, lng: 103.920816 };
+  
+  const map = new google.maps.Map(document.getElementById("reservation-googleMap"), {
+    zoom: 13,
+    center: singapore_loc_1
+  });
+  const marker1 = new google.maps.Marker({position: singapore_loc_1, map: map,});
+  const marker2 = new google.maps.Marker({position: singapore_loc_2, map: map,});
+  if(selection === "location-1")
+  {
+    console.log("test");
+    selectMarker(marker1, map);
+  }
+  else if(selection === "location-2")
+  {
+    selectMarker(marker2, map);
+  }
+}
+
 function selectMarker(marker, map) {
   map.setZoom(16);
   map.setCenter(marker.getPosition());
