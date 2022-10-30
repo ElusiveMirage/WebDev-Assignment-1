@@ -39,7 +39,7 @@
             <i class="fa-solid fa-user" style="float: left; position: relative;"></i><p>Name : John Tan </p> 
             <i class="fa-solid fa-phone" style="float: left; position: relative;"></i> <p>Tel : 96964207</p>
             <i class="fa-solid fa-envelope" style="float: left; position: relative;"></i> <p>Email : johntan@mymail.com</p>
-            <i class="fa-solid fa-id-card" style="float: left; position: relative;"></i> <p>License : Class 3A</p>
+            <i class="fa-solid fa-id-card" style="float: left; position: relative;"></i> <p>License : Class 3A</p> 
             
             <button id="profile-edit-button" class="profile-edit-button">Edit Info</button>
             <button id="profile-edit-button" class="profile-edit-button">Change Password</button>
@@ -47,6 +47,19 @@
         
         <hr>
         <h1>Rental History</h1>
+        <div id="reserve-listing">
+            <img id="car-listing-image" src="images/honda.jpg">
+            <h4>Honda E</h4>
+            <hr>
+            <div id="reserve-listing-info">
+                <p>20 Oct - 23 Oct</p>
+                <p id="car-status">Status : Returned, pending final payment</p>
+            </div>
+            <button class="reserve-button" id="review-button" onclick="toggleReviewForm()">Leave Review</button>
+            <button class="reserve-button" id="final-payment-button" onclick="togglePaymentForm()">Confirm Payment</button>
+
+
+        </div>
 
         <div class="footer">
             <div class="social-media-links">
@@ -65,6 +78,50 @@
               <p>Copyright © 2022 AZoom Car Rental Pte. Ltd.</p>
             </div>
           </div> 
+
+          <div class="review-container" style="display: none;" id = "review-container">
+          
+            <form ><h6 class="signup-title">Review</h6>
+            <hr>
+
+            <div id="rating-buttons">
+                <p>Rating :</p>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span> 
+            </div>
+            
+            <div id="review">
+                <textarea id="review-text" rows="3"></textarea>
+            </div>
+                
+            <button type="button" class="submit-button" id="signup-submit" onclick="submitReview()" style="font-size: 16px;">Submit</button>
+             </form>
+          </div>
+
+          <div class="final-payment-container" style="display: none;" id = "final-payment-container">
+          
+            <div><h3 class="signup-title">Total Bill</h3>
+            <hr>
+
+            <div id="bill-text">
+                <p>Rental Cost : $120 x 3</p>
+                <p>Additional Damages : $60</p>
+                <p>GST : $29</p>
+                <p>Total</p>
+            </div>
+            
+            <div id="bill-total">
+                <p>$360</p>
+                <p>$420</p>
+                <p>$449</p>
+                <p>$449</p>
+            </div>
+                
+            <button class="submit-button" id="signup-submit" onclick="finalPayment()" style="font-size: 16px;">Make Payment</button>
+          </div>
 
     </body>
 </div>

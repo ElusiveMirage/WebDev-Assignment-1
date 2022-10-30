@@ -79,9 +79,9 @@
   box-shadow: 0 0 15px 0 rgba(82, 94, 167, 0.4);
   padding: 40px 30px;
   width: 80%;
-  height: 40%;
+  height: 50%;
   max-width: 600px;
-  max-height: 400px;
+  max-height: 500px;
   border-radius: 20px;
   justify-content: center;
   position: absolute;
@@ -158,6 +158,11 @@
   cursor: pointer;
 }
 
+#signup-submit {
+  position: relative;
+  margin: auto;
+}
+
 .submit-button:hover, .submit-button:focus {
   background-color: rgba(10, 161, 221, 0.747);
 }
@@ -172,12 +177,63 @@ h1 {
 #landing-page-header {
   display: block;
   position: relative;
-  text-align: center;
-  padding-top: 25px;
+  text-align: justify;
+  float: left;
+  padding-left: 10px;
   font-size: 32px;
+  color: rgba(91, 105, 235, 0.753);
+  font-family: "montserrat", sans-serif;
+  font-weight: bold;
+  margin-top: -80px;
+}
+
+#landing-page-login {
+  width: 100px;
+  height: 35px;
+  font-size: 1.5rem;
+  font-weight: lighter;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  background-color: rgba(38, 126, 226, 0.25);
+  border: 1px solid rgba(38, 151, 226, 0.25);
+  border-radius: .25em;
+  position: relative;
+  margin: auto;
+  outline: none;
+  cursor: pointer;
+  font-family: "montserrat", sans-serif;
+}
+
+#landing-page-links {
+  display: flex;
+  position: absolute;
+  flex-direction: row;
+  justify-content: left;
+  float: left;
+  margin-top: -150px;
+  column-gap: 30px;
+  font-size: 32px;
+  color: rgba(91, 105, 235, 0.753);
+  font-family: "montserrat", sans-serif;
+  text-align: justify;
+  margin-left: 20px;
+
+}
+
+#landing-page-info {
+  display: block;
+  position: relative;
+  text-align: justify;
+  float: left;
+  line-height: 48px;
+  width: 700px;
+  padding-left: 10px;
+  padding-top: 20px;
+  font-size: 24px;
+  color: rgba(255, 255, 255, 0.753);
   font-family: "montserrat", sans-serif;
   font-weight: normal;
-  font-style: italic;
+  margin-top: -40px;
 }
 
 #landing-page-logo {
@@ -468,12 +524,21 @@ h5 {
 #about-section {
   position: relative;
   color:#333;
-  width: 400px;
+  width: 800px;
   text-align: justify;
+  float: left;
   font-family: "montserrat", sans-serif;
   font-size: 24px;
   margin-left: 10px;
   margin-top: 10px;
+}
+
+#about-page-links {
+  position: relative;
+  width: 400px;
+  text-align: justify;
+  font-family: "montserrat", sans-serif;
+  font-size: 24px;
 }
 
 #about-page-banner {
@@ -482,10 +547,30 @@ h5 {
   height: 450px;
   opacity: 0.6;
   filter: contrast(150%);
-  filter: brightness(0.8);
-  margin-top: -50px;
   margin-right: -10px;
   float: right;
+}
+
+#featured-section {
+  display: block;
+  float: left;
+  position: relative;
+  margin-top: 125px;
+  margin-left: -800px;
+  width: 800px;
+  color:#007bb5;
+  text-align: justify;
+  font-family: "montserrat", sans-serif;
+  font-size: 32px;
+}
+
+#featured-section img {
+  max-width: 200px;
+  float: left;
+}
+
+#featured-section img + img{
+  margin-left: 30px;
 }
 
 /* Contact page css */
@@ -540,6 +625,149 @@ h5 {
   color: black;
   font-family: "montserrat", sans-serif;
   text-align: justify;
+}
+
+#reserve-listing {
+  display: block;
+  position: relative;
+  background-color: white;
+  box-shadow: 10px 8px 8px 10px rgba(51, 51, 51, 0.301);
+  width: 60%;
+  height: 225px;
+  margin-top: 20px;
+  font-family: "montserrat", sans-serif;
+  font-size: 24px;
+  margin-bottom: 250px;
+}
+
+#reserve-listing-info {
+  display: flex;
+  flex-direction: column;
+  float: left;
+  justify-content: left;
+  position: relative;
+  width: 500px;
+  height: 75px;
+  margin-top: -25px;
+  margin-left: 0;
+  text-align: justify;
+}
+
+.reserve-button {
+  display: flex;
+  float: right;
+  position: relative;
+  color: white;
+  background-color: rgba(23, 123, 238, 0.596);
+  border: 1px solid rgba(38, 151, 226, 0.25);
+  border-radius: .25em;
+  outline: none;
+  height: 50px;
+  width: 200px;
+  font-size: 16px;
+  padding: 20px 50px;
+  padding-top: 10px;
+  margin-top: 0px;
+  margin-right: 10px;
+  text-align: center;
+}
+
+.reserve-button + .reserve-button {
+  margin-top: 25px;
+}
+
+.reserve-button:hover, .reserve-button:focus {
+  background-color: rgba(10, 161, 221, 0.452);
+}
+
+.review-container {
+  background-color:rgba(77, 88, 156, 0.85);
+  box-shadow: 0 0 15px 0 rgba(82, 94, 167, 0.4);
+  padding: 40px 30px;
+  width: 80%;
+  height: 50%;
+  max-width: 600px;
+  max-height: 500px;
+  border-radius: 20px;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  font-family: "montserrat", sans-serif;
+}
+
+#rating-buttons {
+  display: flex;
+  flex-direction: row;
+  width: 600px;
+  height: 30px;
+  margin-bottom: 10px;
+  font-size: 24px;
+  line-height: 0;
+}
+
+#review {
+  width: 600px;
+}
+
+h6 {
+  display: block;
+  position: relative;
+  margin-top: 10px;
+  font-size: 32px;
+  margin-bottom: 0;
+}
+
+.final-payment-container {
+  background-color:rgba(77, 88, 156, 0.85);
+  box-shadow: 0 0 15px 0 rgba(82, 94, 167, 0.4);
+  padding: 40px 30px;
+  width: 80%;
+  height: 50%;
+  max-width: 600px;
+  max-height: 500px;
+  border-radius: 20px;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  font-family: "montserrat", sans-serif;
+}
+
+#bill-text {
+  display: flex;
+  flex-direction: column;
+  float: left;
+  justify-content: left;
+  position: relative;
+  width: 400px;
+  height: 350px;
+  margin-top: -25px;
+  margin-left: 0;
+  text-align: justify;
+  color: #ddd;
+  font-size: 24px;
+}
+
+#bill-total {
+  display: flex;
+  flex-direction: column;
+  float: right;
+  justify-content: left;
+  position: relative;
+  width: 100px;
+  height: 350px;
+  margin-top: -25px;
+  margin-right: 0;
+  text-align: justify;
+  color: #ddd;
+  font-size: 24px;
 }
 
 /* Product page css */
@@ -709,6 +937,23 @@ hr {
   border: 1px dotted #ccc;
 }
 
+.icon-container {
+  margin-top: -15px;
+  margin-left: -650px;
+}
+
+.icon-container i {
+  font-size: 32px;
+}
+
+.icon-container i + i{
+  padding-left: 16px;
+}
+
+.payment-container label {
+  text-align: left;
+}
+
 #reserve-button {
   height: 50px;
   background: rgba(23, 123, 238, 0.596);
@@ -720,6 +965,32 @@ hr {
 }
 
 /* Payment page css */
+#payment-submit {
+  height: 50px;
+  background: rgba(23, 123, 238, 0.596);
+  border: none;
+  color: white;
+  font-size: 1.25em;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#payment-complete {
+  font-family: "montserrat", sans-serif;
+  font-size: 32px;
+}
+
+#return-button {
+  height: 50px;
+  background: rgba(23, 123, 238, 0.596);
+  border: none;
+  color: white;
+  font-size: 1.25em;
+  padding: 0 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center;
+}
 
 /* Topnav bar css */
 /* Style the links inside the navigation bar */

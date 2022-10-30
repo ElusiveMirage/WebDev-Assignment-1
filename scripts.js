@@ -25,6 +25,42 @@ function toggleLoginForm()
   }
 }
 
+function toggleReviewForm()
+{
+  var x = document.getElementById("review-container");
+
+  if (x.style.display === "none") {
+    x.style.display = "flex";
+  } else {
+    x.style.display = "none";
+  }
+}
+
+function togglePaymentForm()
+{
+  var x = document.getElementById("final-payment-container");
+
+  if (x.style.display === "none") {
+    x.style.display = "flex";
+  } else {
+    x.style.display = "none";
+  }
+}
+
+function finalPayment()
+{
+  document.getElementById("car-status").innerHTML = "Payment complete";
+  document.getElementById("final-payment-button").style.display = "none";
+  togglePaymentForm();
+}
+
+function submitReview()
+{
+  document.getElementById("review-button").innerHTML = "Review Submitted";
+  document.getElementById("review-button").disabled = true;
+  toggleReviewForm();
+}
+
 function loginSubmit()
 {
   sessionStorage.setItem('userLogin', 'true')
@@ -100,27 +136,28 @@ function validateLogin() {
 
 function validatePayment() {
   var name = document.forms["paymentForm"]["cardname"].value;
+  var number = document.forms["paymentForm"]["cardnumber"].value;
+  var month = document.forms["paymentForm"]["expmonth"].value;
+  var year = document.forms["paymentForm"]["expyear"].value;
+  var cvv = document.forms["paymentForm"]["cvv"].value;
+
   if (name == "") {
     alert("Name must be filled out");
     return false;
   }
-  var number = document.forms["paymentForm"]["cardnumber"].value;
-  if (number == "") {
+  else if (number == "") {
     alert("Credit card number must be filled out");
     return false;
   }
-  var month = document.forms["paymentForm"]["expmonth"].value;
-  if (month == "") {
+  else if (month == "") {
     alert("Date must be filled out");
     return false;
   }
-  var year = document.forms["paymentForm"]["expyear"].value;
-  if (year == "") {
+  else if (year == "") {
     alert("Date must be filled out");
     return false;
   }
-  var cvv = document.forms["paymentForm"]["cvv"].value;
-  if (cvv == "") {
+  else if (cvv == "") {
     alert("CVV must be filled out");
     return false;
   }
